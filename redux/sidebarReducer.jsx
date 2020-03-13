@@ -5,6 +5,7 @@ let initState = {
             { id: 3, name: "News", path: "/news" },
             { id: 4, name: "Music", path: "/music" },
             { id: 5, name: "Settings", path: "/settings" },
+            { id: 5, name: "Users", path: "/users" },
             { id: 6, name: "Friends", path: "/friends" }]
 }
 
