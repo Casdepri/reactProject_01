@@ -1,0 +1,14 @@
+.bgProfile img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.avatar {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.avatar img {
+  width: 150px;
+}

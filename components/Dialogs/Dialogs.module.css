@@ -1,0 +1,97 @@
+.dialogPage {
+}
+
+.messageItems .item, .dialogItems .item a  {
+  margin-bottom: 5px;
+  padding: 15px;  
+  display: block;
+}
+
+.dialogItems {
+  border: 1px solid cornflowerblue;
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  max-height: 600px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.dialogItems .item {
+  background-color: rgba(255, 0, 179, 0.363);
+  transition: .3s;
+}
+
+.dialogItems .item .dialogAvatar {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.dialogItems .item .dialogName {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.dialogItems .item .dialogAvatar img {
+  width: 50px;
+  height: 50px;
+}
+
+.dialogItems .item a {
+}
+
+.dialogItems .item .active, .dialogItems .item:hover, .messageItems .item:hover {  
+  background-color: rgba(0, 247, 255, 0.363);
+}
+
+.messageItems {
+  border: 1px solid darkmagenta;
+  padding: 15px;
+  margin-left: 15px;
+  max-height: 600px;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 70%;
+  display: inline-block;
+}
+
+.messageItems .item {
+  background-color: rgba(94, 255, 0, 0.363);
+  transition: .3s;
+}
+
+.messageItems .item .dialogAvatar{
+  width: 100%;
+  height: 90px;
+}
+
+.messageItems .item .dialogAvatar img {
+  width: 90px;
+}
+
+.messageItems .item:nth-child(odd) .dialogAvatar img {
+  float: right;
+}
+
+.addMessArea {
+  width: 70%;
+  float: right;
+}
+
+.addMessArea textarea{
+  display: inline-block;
+  width: 70%;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.addMessArea .sendMessage {
+  display: inline-block;
+  width: 15%;
+  vertical-align: top;
+}
+
+.addMessArea .sendMessage button {
+  padding: 15px;
+}

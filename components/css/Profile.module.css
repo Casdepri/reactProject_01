@@ -1,0 +1,81 @@
+.content {
+  grid-area: content;
+  border: 1px solid #ff6a00;
+  padding: 15px;
+}
+
+.bgProfile img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.info {
+    margin-bottom: 30px;
+}
+
+.avatar {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.avatar img {
+  width: 150px;
+}
+
+.selfInfo {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.textarea {
+    background: #eeeeee;
+    margin: 15px 0;
+    padding: 15px;
+    height: 50px;
+}
+
+.btn.sendPost {
+  margin: 15px 0;
+  background: #e67f24;
+  color: #ffffff;
+  float: right;
+  padding: 3px 50px 3px 10px;
+  cursor: pointer;
+}
+
+.addPost {
+    width: 90%;
+}
+
+.item {
+    float: left;
+    width: 89%;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: rgba(238, 238, 238, .4);
+}
+
+.postItems > .avatar img {
+    width: 60px;
+    display: block;
+}
+
+.postItems.avatar {
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.publication {
+    display: inline-block;
+    vertical-align: top;
+}
+

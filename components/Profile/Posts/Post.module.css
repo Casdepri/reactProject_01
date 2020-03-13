@@ -1,0 +1,38 @@
+.item {
+    float: left;
+    width: 89%;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgba(238, 238, 238, .4);
+    position: relative;
+}
+
+.avatar {
+    display: inline-block;
+}
+
+.postItems > .avatar img {
+    width: 60px;
+    display: block;
+}
+
+.postItems.avatar {
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.publication {
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.postLike {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: rgb(25, 148, 25);
+    font-weight: bold;
+}

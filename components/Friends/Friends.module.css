@@ -1,0 +1,40 @@
+.friends {
+    padding: 15px;
+}
+
+.friends .items {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-gap: 8px;
+}
+
+.friends .items .item {
+}
+
+.friends .items .item .avatar {
+}
+
+.friends .items .item .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.friends .items .item .avatar .status {
+    position: relative;
+}
+
+.friends .items .item .avatar .status:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 187, 47);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 30px;
+}
+
+.friends .items .item .name {
+
+}

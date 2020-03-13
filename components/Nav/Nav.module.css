@@ -1,0 +1,9 @@
+.nav {
+  grid-area: nav;
+  border: 1px solid #ff00eb;
+  padding: 15px 0;
+}
+
+.item {
+  text-align: center;
+}

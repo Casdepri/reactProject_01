@@ -1,0 +1,10 @@
+.header {
+  grid-area: header;
+  border: 1px solid #00ff7e;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  width: 150px;
+}
