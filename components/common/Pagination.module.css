@@ -1,0 +1,23 @@
+span.active {
+    font-weight: bold;
+}
+
+span.active > span.page {
+    background-color: rgb(118, 206, 17);
+    border-color: rgb(118, 206, 17);
+    color: #ffffff;
+}
+
+span > span.page {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 30px;
+    width: 100%;
+    max-height: 30px;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}

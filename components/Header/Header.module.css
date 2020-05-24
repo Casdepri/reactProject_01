@@ -8,3 +8,7 @@
 img {
   width: 150px;
 }
+
+.loginBox {
+  float: right;
+}

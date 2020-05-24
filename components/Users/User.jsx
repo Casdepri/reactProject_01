@@ -2,23 +2,31 @@ import React from 'react';
 import style from './Users.module.css';
 
 import { NavLink } from 'react-router-dom';
-import { Pagination } from '../common/Pagination';
 
 let Users = (props) => {
+
 	let countShowPages = Math.ceil(props.totalUsersCount / props.pageSize);
 	let arrayT = [];
 
 	for (let i = props.firstDisplaPage; i <= props.maxDisplayPage; i++) {
 		arrayT.push(i);
 	}
-	
 	return (
 		<div>
-			<Pagination  togglePrewPage={props.togglePrewPage} toggleNextPage={props.toggleNextPage} currentPage={props.currentPage} onPageChanged={props.onPageChanged} externalObject={arrayT}/>
+			<span onClick={props.togglePrewPage}>Prew </span>
+			<span>
+				{arrayT.map(p => {
+					return <span className={p === props.currentPage ? style.active : null}
+						onClick={() => { props.onPageChanged(p); }}>
+						<span className={style.page}>{p}</span>
+					</span>
+				})}
+			</span>
+			<span onClick={props.toggleNextPage}> Next</span>
 			<div className={style.userItems}>
 				{
 					props.users.map(u =>
-						<div className={style.userItem} key={u.id}>
+						<div className={style.userItem}>
 							<div className={style.userLeft}>
 								<NavLink to={"/profile/" + u.id}>
 									<div className={style.userPhoto}>
@@ -35,8 +43,8 @@ let Users = (props) => {
 										<p>{u.status}</p>
 									</div>
 									<div className={style.userLocation}>
-										<div className={style.userCity}>{u.userLocation.cityName}</div>
-										<div className={style.userCountry}>{u.userLocation.countryName}</div>
+										<div className={style.userCity}>"u.userLocation.cityName"</div>
+										<div className={style.userCountry}>"u.userLocation.countryName"</div>
 									</div>
 								</div>
 							</div>

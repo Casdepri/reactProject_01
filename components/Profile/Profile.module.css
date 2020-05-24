@@ -12,3 +12,18 @@
 .avatar img {
   width: 150px;
 }
+
+.info {
+  margin-bottom: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.selfInfo {
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}

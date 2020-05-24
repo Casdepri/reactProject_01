@@ -1,13 +1,7 @@
 const ADD_MESSAGE = 'addMessage';
-const UPD_DEFAULT_TEXT_MSG = 'updateDefaultTextMessage';
 
-export const addMessageCreator = () => {
-    return { type: ADD_MESSAGE }
-};
+export const addMessageCreator = (text) => {return { type: ADD_MESSAGE, text }};
 
-export const updateMessageCreator = (text) => {
-    return { type: UPD_DEFAULT_TEXT_MSG, newText: text }
-};
 
 let initState = {
     dialogsData: [
@@ -21,8 +15,7 @@ let initState = {
         { id: 2, message: "Hello 2", user: "friend" },
         { id: 3, message: "Hello 3", user: "me" },
         { id: 4, message: "Hello 4", user: "friend" },
-        { id: 5, message: "Hello 5", user: "me" }],
-    newMessageText: ""
+        { id: 5, message: "Hello 5", user: "me" }]
 }
 
 const messageReducer = (state = initState, action) => {
@@ -30,23 +23,23 @@ const messageReducer = (state = initState, action) => {
         case ADD_MESSAGE: {
             let newMessage = {
                 id: 0,
-                message: state.newMessageText
+                message: action.text
             };
 
             return {
                 ...state,
                 messageData: [...state.messageData, newMessage],
-                newMessageText: ''
             }
         }
-        case UPD_DEFAULT_TEXT_MSG: {
-            return {
-                ...state,
-                newMessageText: action.newText
-            }
-        }
+      
         default:
             return state;
+    }
+}
+
+export const addMessage = (text) => {
+    return (dispatch) => {
+        dispatch(addMessageCreator(text));
     }
 }
 
